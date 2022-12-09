@@ -1,0 +1,956 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+
+:root{
+    --color:#6C5CE7;
+  }
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+    
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+.heading{
+    margin: 2rem;
+    padding-top: 6rem;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: var(--color);
+    position: relative;
+    letter-spacing: .2rem;
+}
+
+.heading::before, .heading::after{
+    content: '';
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-top: .4rem solid var(--color);
+    border-left: .4rem solid var(--color);
+}
+
+.heading::before{
+    top: 5.8rem; left: -2rem;
+}
+
+.heading::after{
+    bottom: -.5rem; right: -2rem;
+    transform: rotate(180deg);
+}
+
+.btn{
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    background: var(--color);
+    color: #fff;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 15rem;
+    font-size: 1.7rem;
+    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+}
+
+.btn:hover{
+    letter-spacing: .1rem;
+    opacity: .8;
+}
+
+
+
+
+
+
+
+
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 0; left: 0;
+    z-index: 100;
+   background-color: rgb(128, 13, 128);
+}
+
+.header .logo{
+    font-size: 2.5rem;
+}
+
+.header .logo img{
+    margin: 0; padding: 0;
+    width: 260px;
+}
+
+.header .navbar{
+    display: flex;
+    margin-right: 0px;
+}
+
+.header .navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .navbar ul li{
+    margin: 0 2rem;
+    justify-content: space-around;
+}
+
+.header .navbar ul li a{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.header .navbar ul li a:hover{
+    color: #ccc;
+}
+
+.header button{
+    width: 240px;
+    height: 60px;
+    border: none;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: #ac2a9a;
+    color: #fff;
+}
+.header button:hover{
+    background-color: #ad5cf0;
+    width: 340px;
+}
+
+
+.header .fa-bars{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    /*display: none;*/
+}
+.header .call .fa-phone{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+
+.home{
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(purple, var(--color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    overflow: hidden !important;
+}
+
+
+.home .banner{
+    color: #fff;
+    font-size: 5rem;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.home .slogan{
+    color: #eee;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.home button{
+    height: 4rem;
+    width: 18rem;
+    background: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+    border-radius: 25px;
+}
+
+.home button:hover{
+    letter-spacing: .1rem;
+}
+
+.home .wave{
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    width: 100%;
+    height: 11rem;
+    background: url(/wave.png);
+    background-size: 100rem 11rem;
+    background-repeat: repeat-x;
+    animation: waves 10s linear infinite;
+}
+
+.home .wave2{
+    animation-direction: reverse;
+    opacity: .2;
+}
+
+.home .wave3{
+    animation-duration: 4s;
+    opacity: 5;
+}
+
+@keyframes waves{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position: 100rem;
+    }
+}
+
+.home .fa-cog{
+    position: absolute;
+    font-size: 30rem;
+    opacity: .15;
+    color: #fff;
+    animation: rotate 10s linear infinite;
+}
+
+.home .nut1{
+    top: 10%; left: -15rem;
+}
+
+.home .nut2{
+    bottom: 23%; right: -13rem;
+    animation-direction: reverse;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*home section ends*/
+
+
+
+
+
+/*map section starts*/
+
+
+
+
+
+
+.map .book2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.map .book2 h2{
+    font-size: 5rem;
+    margin-right: 19px;
+    padding-top: 2rem;
+    font-weight: 500;
+    /*font-size: 10px;
+    margin: -3px;
+    line-height: 1.2rem;
+    color: #000;
+    font-weight: 300;*/
+}
+
+.map .book2{
+    color: rgb(141, 140, 140);
+}
+
+.map .book2 .blue{
+    color: rgb(21, 93, 201);
+}
+
+.map p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+    color: rgb(167, 167, 167);
+}
+
+map{
+    min-height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mapp{
+    background-color: #fff;
+    position: relative;
+}
+
+.mapp img{
+    margin-bottom: 3%;
+    position: relative;
+    left: 8%;
+    opacity: .4;
+    /* height: 80vh; */
+}
+
+
+.mapp span{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    top: 50%;
+    left: 23%;
+    background-color: blue;
+/* now i create highlight animation  */
+animation: highlight 1.5s linear infinite;
+}
+
+/* same things i set different location */
+
+.mapp .marker1{
+    left: 50%;
+    top: 20%;
+    animation-delay: 3s;
+}
+
+.mapp .marker2{
+    left: 30%;
+    top: 70%;
+    animation-delay: 5s;
+}
+
+
+.mapp .marker3{
+    left: 40%;
+    top: 50%;
+    animation-delay: 1s;
+}
+
+.mapp .marker4{
+    left: 20%;
+    top: 30%;
+    animation-delay: 7s;
+}
+
+.mapp .marker5{
+    left: 60%;
+    top: 25%;
+    animation-delay: 1s;
+}
+
+.mapp .marker6{
+    left: 55%;
+    top: 40%;
+    animation-delay: 1s;
+}
+
+.mapp .marker7{
+    left: 28%;
+    top: 79%;
+    animation-delay: 1s;
+}
+
+.mapp .marker8{
+    left: 45%;
+    top: 60%;
+    animation-delay: 1s;
+}
+
+
+
+@keyframes highlight{
+    100%{
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+
+
+/*map section ends*/
+
+/*count section sarts*/
+
+
+
+.num-projcts .contain{
+    padding-top: 13rem;
+    padding-bottom: 30rem;
+}
+
+.contain{
+    background-color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    overflow: hidden;
+    margin: 0;
+} 
+
+.counter-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 70px 150px;
+}
+
+.counter{
+    color: rgb(26, 115, 232);
+    font-size: 11rem;
+    margin-top: 1px;
+}
+
+.counter-container span{
+    line-height: 3rem;
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: rgb(109, 109, 109);
+}
+
+
+/*count section ends*/
+
+
+
+
+
+
+
+/*service section starts*/
+
+
+.service .headline h1{
+font-size: 6rem;
+color: rgb(34, 33, 33);
+}
+
+.service hr{
+    width: 70%;
+}
+
+.service .headline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 60rem;
+}
+
+.service{
+    /* min-height: 100vh; */
+   /* background-color: rgb(218, 216, 216);*/
+   min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    position: relative;
+   background: linear-gradient(#fff, var(--color));
+   box-shadow: 0 1rem .9rem rgba(52, 31, 105, 0.3);
+
+}
+
+
+.service .fa-cog{
+    position: absolute;
+    font-size: 36rem;
+    opacity: .15;
+    color: rgb(116, 114, 119);
+    animation: rotate 10s linear infinite;
+}
+
+.service .nut1{
+    top: 10%; left: -15rem;
+}
+
+.service .nut2{
+    bottom: 23%; right: -13rem;
+    animation-direction: reverse;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.service .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0rem 0rem;
+    margin: 8rem 20rem;
+}
+.service .box-container .box{
+    background: rgb(244, 234, 252);
+    margin: 4rem 0rem;
+    width: 64rem;
+    height: 50vh;
+    text-align: center;
+    box-shadow: 0 0 .9rem rgba(0,0,0,.3);
+    border-radius: 20px;
+}
+
+.service .box-container .box img{
+    width: 13rem;
+    padding: 1rem;
+}
+.service .box-container .box h3{
+    font-size: 4rem;
+    color: rgb(61, 61, 61);
+  
+}
+
+.service .box-container .box p{
+    font-size: 2.5rem;
+    color: rgb(95, 94, 94);
+} 
+
+.service .box-container .box:hover{
+    background-color: rgb(214, 214, 214);
+    border: 2px solid rgb(147, 146, 151);
+}
+
+
+
+/*service section ends*/
+
+
+
+
+
+
+
+
+
+/*tech we use starts*/
+
+
+
+.techweuse{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.techweuse .container{
+    width: 80%;
+    height: 70vh;
+    margin-left: 20%;
+    border-radius: 80px;
+    background-color: rgb(248, 195, 50);
+}
+
+
+  
+
+/*.techweuse .container .box1{
+    background:
+          linear-gradient(red, transparent),
+          linear-gradient(to top left, lime, transparent),
+          linear-gradient(to top right, blue, transparent);
+      background-blend-mode: screen;
+      animation: mymove 5s infinite;
+  }
+  
+  
+  @keyframes mymove{
+    from {background-color: red;}
+    to {background-color: blue; } 
+  }*/
+
+
+
+.techweuse .container .box1{
+    width: 35%;
+    height: 70vh;
+    background-color: rgb(248, 195, 50);
+    border-radius: 80px;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.techweuse .container .box1 h1{
+    font-size: 4.5rem;
+}
+
+
+.techweuse .container .box1 p{
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
+.techweuse .boxx{
+    width: 65%;
+    height: 70vh;
+    padding: 5rem;
+    background-color: rgb(248, 195, 50);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.techweuse .container .boxx a{
+    font-size: 6rem;
+    color: rgb(245, 245, 245);
+}
+
+
+
+/*tech we use ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*portfolio section starts*/
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.portfolio{
+    max-width: 2136px;
+    margin: 50px auto;
+    padding: 6rem;
+}
+.portfolio h2{
+    font-size: 6rem;
+    font-weight: 400;
+    color: rgb(255, 166, 0);
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.portfo-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfo-list li{
+    /*width: calc(100%/3 - 40px/3);*/
+    flex: 1 1 calc(100%/3 - 90px/3);
+}
+
+.portfo-list li:hover{
+    color: rgb(22, 21, 21);
+}
+
+.portfo-list li:nth-child(3n){
+    margin-right: 0;
+}
+
+.portfo-list li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfo-list li img:hover{
+    background-color: transparent rgb(216, 42, 42);
+    box-shadow: #444;
+    transform: scale(1.2);
+}
+
+  
+
+/*portfolio section ends*/
+
+
+
+
+/*bottom section starts------------------*/
+
+
+.bottom{
+    padding: 0;
+    margin: 0;
+    max-height: 80vh;
+    width: 100vw;
+}
+
+.container{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    font-weight: 400;
+}
+
+.container hr{
+    display: flex;
+    justify-content: baseline;
+}
+
+.container .box1 .image img{
+    margin: 0; padding: 0;
+    width: 280px;
+}
+.box1{
+    height: 80vh;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.box1 .icon a{
+    font-size: 3rem;
+    margin-right: 20px;
+    color: black;
+}
+
+.box1 .icon{
+    margin: 8px 0;
+}
+
+
+
+
+.box2{
+    height: 80vh;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top:  50px;
+    padding-left: 20px; padding-right: 20px;
+}
+
+.box2 ul li{
+    list-style: none;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.box2 ul li h4{
+    font-size: 28px;
+}
+
+.box2 ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    text-align: left;
+}
+
+
+
+
+
+.box3{
+    height: 80vh;
+    width: 25vw;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding-top:  30px;
+    padding-left: 0px; padding-right: 20px;
+}
+
+.box3 ul li{
+    list-style: none;
+    font-size: 22px;
+    margin: 2px 0;
+}
+
+.box3 ul li h4{
+    font-size: 28px;
+}
+
+.box3 ul {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 0;
+    text-align: left;
+}
+
+
+
+
+
+
+.box4{
+    height: 80vh;
+    width: 25vw;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding-top:  30px;
+    padding-left: 0px; padding-right: 70px;
+}
+
+.box4 ul li{
+    list-style: none;
+    font-size: 22px;
+    margin: 2px 0;
+}
+
+.box4 ul li a{
+    display: contents;
+    font-size: 30px;
+}
+
+.box4 ul li h4{
+    font-size: 28px;
+}
+
+.box4 ul {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 0;
+    text-align: left;
+}
+
+
+
+
+
+.box5 {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.box5 li{
+    font-size: 23px;
+    list-style: none;
+    margin-left: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/*--------------------bottom section ends*/
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+
+@media (max-width:768px){
+  html{
+    font-size: 50%;
+  }
+
+  .header .fa-bars{
+    display: block;
+  }
+
+  .header .navbar{
+    position: fixed;
+    top: 120%; left: 0;
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    border-top: .1rem solid rgba(0,0,0,.3);
+  }
+
+  .header .navbar ul{
+    height: 100%;
+    width: 100%;
+    flex-flow: column;
+  }
+
+  .header .navbar ul li{
+    margin: 1rem 0;
+  }
+
+  .header .navbar ul li a{
+    color: #444;
+    font-size: 2.4rem;
+  }
+
+  .header .fa-times{
+    transform: rotate(180deg);
+  }
+
+.home .banner{
+    font-size: 4rem;
+}
+
+.home .slogan{
+    font-size: 1.7rem;
+}
+
+
+}
